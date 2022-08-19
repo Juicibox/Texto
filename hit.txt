@@ -5,3 +5,5 @@ vamos a ver el git con platzi
 
 Super 
 ya estamos en git hud
+
+despues del ssh
