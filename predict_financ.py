@@ -1,11 +1,8 @@
 import streamlit as st
 import joblib
 
-def load_model():
-    model = joblib.load('model.joblib')
-    return model
 
-modelo = load_model()
+modelo = joblib.load('model.joblib')
 
 def show_predict_page():
     st.write("El modelo estima los precios de vivienda para la ciudad de Bogotá, Colombia")
