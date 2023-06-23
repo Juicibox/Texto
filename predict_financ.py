@@ -1,8 +1,8 @@
 import streamlit as st
-import pickle
+import joblib
 
 def load_model():
-    model = pickle.load(open('modelo.pkl', 'rb'))
+    model = joblib.load('model.joblib')
     return model
 
 modelo = load_model()
