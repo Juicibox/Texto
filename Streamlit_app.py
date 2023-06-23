@@ -1,4 +1,6 @@
-import streamlit as st
-st.title("Hello World")
-st.text("This is a test for my first app on streamlit")
-st.text_input("Your name")
+import streamlit
+from predict_financ import show_predict_page
+
+
+show_predict_page()
+
