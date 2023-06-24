@@ -2,11 +2,7 @@ import streamlit as st
 import joblib
 
 if st.button('Volver a proyectos'):
-    
-    js = f"window.open('https://juicibox.github.io/proyectos.html','_self')"
-    html = '<img src onerror="{}">'.format(js)
-    div = '<div style="display:none">{}</div>'.format(html)
-    st.markdown(div, unsafe_allow_html=True)
+    st.markdown('<a href="https://juicibox.github.io/proyectos.html" target="_self">Click</a>', unsafe_allow_html=True)
 
 modelo = joblib.load('model.joblib')
 
