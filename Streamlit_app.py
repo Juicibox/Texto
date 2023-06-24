@@ -4,7 +4,7 @@ import joblib
 if st.button('Ir a Google'):
     # Redirigir al usuario a Google
     st.write('Redirigiendo...')
-    st.experimental_set_query_params(q='google')
+    st.experimental_set_query_params(q='https://www.google.com/')
 
 modelo = joblib.load('model.joblib')
 
