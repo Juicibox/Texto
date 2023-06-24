@@ -1,6 +1,10 @@
 import streamlit as st
 import joblib
 
+if st.button('Ir a Google'):
+    # Redirigir al usuario a Google
+    st.write('Redirigiendo...')
+    st.experimental_set_query_params(q='google')
 
 modelo = joblib.load('model.joblib')
 
