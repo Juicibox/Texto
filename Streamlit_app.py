@@ -1,10 +1,8 @@
 import streamlit as st
 import joblib
 
-if st.button('Ir a Google'):
-    # Redirigir al usuario a Google
-    st.write('Redirigiendo...')
-    st.markdown('<a href="https://www.google.com" target="_blank">Ir a Google</a>', unsafe_allow_html=True)
+if st.button('Volver a proyectos'):
+    st.markdown('<a href="https://juicibox.github.io/proyectos.html" target="_self">Click</a>', unsafe_allow_html=True)
 
 modelo = joblib.load('model.joblib')
 
