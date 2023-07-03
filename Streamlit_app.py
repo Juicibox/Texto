@@ -1,6 +1,8 @@
 import streamlit as st
 import joblib
 
+st.set_page_config(page_title="Price_House", page_icon="🏠")
+
 if st.button('Volver a proyectos'):
     st.markdown('<a href="https://juicibox.github.io/proyectos.html" target="_self">Click</a>', unsafe_allow_html=True)
 
