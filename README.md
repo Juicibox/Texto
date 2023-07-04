@@ -1,2 +1,2 @@
 # Texto
-Model predicción 
+Modelo de predicción 
