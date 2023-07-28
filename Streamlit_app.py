@@ -24,4 +24,4 @@ if ok:
   X = [[estrato, area, habitacion, bano, parqueadero]]
   precio = modelo.predict(X)
   num =  np.int64(precio[0])
-  st.subheader(f"El precio estimado de la vivienda es: {str(num).format(',d')} millones de pesos.")
+  st.subheader(f"El precio estimado de la vivienda es: {num:,d} millones de pesos.")
