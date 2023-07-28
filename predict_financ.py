@@ -1,4 +1,5 @@
 import streamlit as st
+import numpy as np
 import joblib
 
 
@@ -18,4 +19,5 @@ def show_predict_page():
     if ok:
         X = [[estrato, area, habitacion, bano, parqueadero]]
         precio = modelo.predict(X)
-        st.subheader(f"El precio estimado de la vivienda es: {precio[0]} millones de pesos")
+        num = np.int64(precio[0])
+        st.subheader(f"El precio estimado de la vivienda es: {str(precio).format(',d')} millones de pesos")
