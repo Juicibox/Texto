@@ -9,7 +9,7 @@ if st.button('Volver a proyectos'):
 modelo = joblib.load('model.joblib')
 
 
-st.write("El modelo estima los precios de vivienda para la ciudad de Bogotá, Colombia")
+st.write("El modelo estima los precios de vivienda 🏠 para la ciudad de Bogotá, Colombia en el año 2021.")
 
 
 estrato = st.slider("Estrato", 1, 6, 3)
@@ -22,4 +22,4 @@ ok = st.button("Calcular Precio")
 if ok:
   X = [[estrato, area, habitacion, bano, parqueadero]]
   precio = modelo.predict(X)
-  st.subheader(f"El precio estimado de la vivienda es: {precio[0]} millones de pesos")
+  st.subheader(f"El precio estimado de la vivienda es: {str.format(precio[0], ',d')} millones de pesos.")
