@@ -8,9 +8,9 @@ if st.button('Volver a proyectos'):
     st.markdown('<a href="https://juicibox.github.io/proyectos.html" target="_self">Click</a>', unsafe_allow_html=True)
 
 modelo = joblib.load('model.joblib')
+st.title("Predicción Valor de Vivienda 🏠")
 
-
-st.write("El modelo estima los precios de vivienda 🏠 para la ciudad de Bogotá, Colombia en el año 2021.")
+st.write("El modelo estima los precios de vivienda para la ciudad de Bogotá, Colombia en el año 2021.")
 
 
 estrato = st.slider("Estrato", 1, 6, 3)
