@@ -22,4 +22,5 @@ ok = st.button("Calcular Precio")
 if ok:
   X = [[estrato, area, habitacion, bano, parqueadero]]
   precio = modelo.predict(X)
-  st.subheader(f"El precio estimado de la vivienda es: {str.format(precio[0], ',d')} millones de pesos.")
+  num =  np.int64(precio[0])
+  st.subheader(f"El precio estimado de la vivienda es: {str(num).format(',d')} millones de pesos.")
